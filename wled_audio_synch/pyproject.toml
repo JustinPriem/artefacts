@@ -1,0 +1,16 @@
+[project]
+name = "wled-audio-sync"
+version = "0.1.0"
+description = "PC-Audio (WASAPI-Loopback) per WLED-Audio-Sync-UDP an WLED-LED-Strips senden"
+requires-python = ">=3.9"
+dependencies = [
+    "soundcard",
+    "numpy",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
